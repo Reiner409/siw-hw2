@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2022 by anonymous (http://jsbin.com/reweretufo/61/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+
+<head>
+  <title>SIW</title>
+  <style id="jsbin-css">
+    body {
+      background-color: #ADDACA;
+      font: 1.0em helvetica;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: navy;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 1.7rem;
+      font-weight: bold;
+      color: navy;
+      margin: 0px;
+      margin-bottom: 15px;
+    }
+
+    .h2_2 {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #844597;
+      margin: 0px;
+      margin-bottom: 7px;
+    }
+
+    h3 {
+      margin: 0px;
+    }
+
+    #flex-container {
+      display: flexbox;
+    }
+
+    #flex-containerTitle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2%;
+    }
+
+    #flex-containerNamePic {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 35%;
+      flex-grow: 1;
+    }
+
+    .name {
+      /* width: 100%; */
+      /* margin-left: 15%; */
+      font: 1.0em Bedrock;
+    }
+
+    .immagine {
+      width: 50%;
+      /* margin-left: 20%; */
+    }
+
+    .immagineIA {
+      margin: 0px;
+      padding-right: 5%;
+      width: 20%;
+      margin-left: 0%;
+    }
+
+    .col2 {
+      margin: 2px;
+      border: 1px solid black;
+      background-color: #d8cbcb;
+      padding: 20px;
+      padding-bottom: 2px;
+      flex-grow: 1;
+    }
+
+    .tesi_tirocini {
+      margin: 2px;
+      margin-bottom: 2%;
+      border: 1px solid black;
+      background-color: #a0c0f3;
+      padding: 20px;
+      padding-bottom: 2px;
+      flex-grow: 1;
+    }
+
+    .ricerca {
+      margin: 2px;
+      margin-bottom: 2%;
+      border: 1px solid black;
+      background-color: #dedede;
+      padding: 20px;
+      padding-bottom: 2px;
+      flex-grow: 1;
+    }
+
+    .ricerca_title {
+      color: purple;
+    }
+
+    .altre_attivita {
+      margin: 2px;
+      margin-bottom: 2%;
+      border: 1px solid black;
+      background-color: #c9fd8d;
+      padding: 20px;
+      padding-bottom: 2px;
+      flex-grow: 1;
+    }
+
+    .altre_attivita_title {
+      color: green;
+    }
+
+    .teaching {
+      margin: 2px;
+      margin-bottom: 2%;
+      border: 1px solid black;
+      background-color: #e7ee8ac7;
+      padding: 20px;
+      padding-bottom: 2px;
+      flex-grow: 1;
+    }
+
+    .generalInformations {
+      flex-grow: 1;
+      margin: 0px;
+      margin-right: 10%;
+      padding: 10px;
+      padding-left: 2%;
+      border: 1px solid black;
+      background-color: #83e2ba;
+    }
+
+    .custom_title {
+      background-color: #008080;
+      color: white;
+      padding: 2px;
+      padding-left: 10px;
+
+    }
+
+    ul {
+      padding-bottom: 0.5em;
+      padding-top: 0;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  </style>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+  <div id="flex-container">
+    <div id="flex-containerTitle">
+      <div id="flex-containerNamePic">
+        <div class="name">
+          <h1>Paolo Merialdo</h1>
+        </div>
+        <img class="immagine" src="http://merialdo.dia.uniroma3.it/paolo-merialdo.jpg" />
+      </div>
+      <div class="generalInformations">
+        <div>
+          <h2>General informations</h2>
+          <div>
+            <a href="http://www.uniroma3.it/">
+              <strong>Università Roma Tre</strong></a>
+          </div>
+          <div>
+            <a href="http://www.dia.uniroma3.it/">
+              <strong> Dipartimento di Ingegneria </strong></a>
+          </div>
+          <div>Via della Vasca Navale, 79 </div>
+          <div> 00146 - Roma (Italy) </div>
+          <div>
+            <a
+              href="http://maps.google.com/maps?f=q&hl=en&geocode=&time=&date=&ttype=&q=via+della+vasca+navale,+79+roma&sll=37.0625,-95.677068&sspn=51.177128,97.294922&num=10&iwloc=addr&iwstate1=saveplace">
+              <strong>on Google Map</strong>
+            </a>
+          </div>
+          <div> Tel.: +39-06.5733.3218 </div>
+          <div> Fax: +39-06.5733.3211 </div>
+          <div>
+            <a href="mailto:paolo.merialdo@uniroma3.it">
+              <strong>paolo.merialdo@uniroma3.it</strong>
+            </a>
+          </div>
+          <hr>
+          <div>
+            <a
+              href="http://asi.uniroma3.it/download/curriculum/1621524546Paolo%20Merialdo%20-%202021-05-14%20-%20EN.pdf">
+              <strong>My curriculum vitae</strong>
+            </a>(pdf)
+          </div>
+        </div>
+      </div>
+      <img class="immagineIA"
+        src="https://cdnb.artstation.com/p/assets/images/images/010/538/265/original/dane-vranes-datascience-optimized.gif?1524951477" />
+    </div>
+    <div class="teaching">
+      <h2>INSEGNAMENTI</h2>
+      <h3>Anno accademico 2021-2022</h3>
+      <ul>
+        <li>
+          <a
+            href="https://www.google.com/url?q=https%3A%2F%2Fingegneria.el.uniroma3.it%2Fcourse%2Fview.php%3Fid%3D229&sa=D&sntz=1&usg=AOvVaw0bstJHkQLV6M810L11My9Y">Sistemi
+            Informativi su Web</a> (6CFU)
+        </li>
+        <ul>
+          <li>SECONDO SEMESTRE</li>
+          <li>(Laurea in Ingegneria Informatica, Laurea Magistrale in Ingegneria delle Tecnologie della Comunicazione e
+            dell'Informazione)</li>
+        </ul>
+        <li>
+          Ingegneria dei dati (6CFU)
+          <br>
+          Nell'aa 2021/2022, il corso verrà rinominato Ingegneria dei dati
+          <ul>
+            <li>PRIMO SEMESTRE</li>
+            <li>(Laurea Magistrale in Ingegneria Informatica)</li>
+          </ul>
+        </li>
+        <li>
+          <a
+            href="https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fsite%2Froma3seminari&sa=D&sntz=1&usg=AOvVaw3kmWZYoCoONikd-nnZKLdl">Conoscenze
+            Utili per l'Inserimento nel Mondo del Lavoro</a> (1CFU)
+          <ul>
+            <li>SECONDO SEMESTRE</li>
+            <li>(Laurea Magistrale in Ingegneria Informatica, Laurea Magistrale in Ingegneria Gestionale e
+              dell'Automazione)</li>
+          </ul>
+        </li>
+        <li>
+          <a
+            href="https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fview%2Froma3id%2Fhome-page&sa=D&sntz=1&usg=AOvVaw3MHXR3R14-0FkyKrS4RfPE">Imprenditorialità
+            digitale</a> (6 CFU)
+          <ul>
+            <li>PRIMO SEMESTRE</li>
+            <li>(Laurea Magistrale in Ingegneria Informatica, Laurea Magistrale in Ingegneria Gestionale e
+              dell'Automazione)</li>
+          </ul>
+        </li>
+      </ul>
+      <hr><br>
+      <h3>Informazioni sempre valide</h3>
+      <br>
+      <ul>
+        <li><b>Corsi, Orario di ricevimento, tesi, valutazioni della didattica, ecc.</b>
+          <ul>
+            <li>
+              Vedi
+              <a href="https://sites.google.com/site/paolomerialdo/">
+                https://sites.google.com/site/paolomerialdo/
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="tesi_tirocini">
+      <h2>TESI E TIROCINI</h2>
+      <div class="h2_2">PROPOSTE DI TESI E TIROCINI NEI PROGETTI DI RICERCA</div>
+      <ul>
+        <li>Progetto <b>Kelpie</b> (in collaborazione con University of Alberta)</li>
+        <ul>
+          <li>Explainable AI for Link Prediction on Knowledge Graphs
+            Machine Learning, explainable AI</li>
+        </ul>
+        <li>Progetto <b>In codice Ratio</b></li>
+        <ul>
+          <li>
+            Knowledge extraction from medieval manuscripts
+            Machine Learning, Natural Language Processing, Computer Vision
+          </li>
+        </ul>
+        <li>
+          Progetto <b>CERTA</b> (in collaborazione con AT&T Research e University of Toronto)
+        </li>
+        <ul>
+          <li>
+            Explainable Machine Learning for data management tasks
+            Machine Learning, explainable AI, Big Data Integration
+          </li>
+        </ul>
+      </ul>
+      Tutte le tesi prevedono attività di progettazione, implementazione e sperimentazione. Tecnologie e metodologie:
+      big data processing, machine learning, data analytics, search, image processing.
+      All'interno di questi progetti si possono definire tesi magistrali e tirocini triennali.
+      <br><br>
+      <div class="h2_2">PROPOSTE DI TESI (MAGISTRALI) E TIROCINI (TRIENNALI) PRESSO AZIENDE</div>
+      <ul>
+        <li>vedi bacheca davanti allo studio del docente</li>
+      </ul>
+    </div>
+    <!-- <div class="col2"> -->
+    <div class="col2">
+      <h2>RICERCA</h2>
+      <b>Research Activities</b>
+      <ul>
+        <li>
+          <a href="http://www.inf.uniroma3.it/db/icr">
+            In codice Ratio
+          </a>
+          .Knowledge discovery from the Vatican Secret Archive. Read the <a
+            href="https://www-technologyreview-com.cdn.ampproject.org/c/s/www.technologyreview.com/s/610530/ai-tackles-the-vaticans-secrets/amp">MIT
+            Technology Review article</a> on the project!
+        </li>
+        <li>RaF: Redundacy as Friend. Big Data Integration</li>
+        <li>
+          <a href="http://www.dia.uniroma3.it/db/lector/">
+            Lector
+          </a>
+          : Knowledge Graph augmentation from text and tables
+        </li>
+        <li>
+          <a href="https://dl.acm.org/citation.cfm?doid=3329859.3329878">
+            Mojito
+          </a>
+          : Explaining Deep Learning Models for Entity Resolution.
+          <a href="https://github.com/merialdo/research.mojito">
+            Code on github
+          </a>
+        </li>
+      </ul>
+      <b>Fundings</b>
+      <ul>
+        <li>2018-2020 <b>STARTED</b>: Startup Skills for Researchers and Innovators (Erasmus+ KA2)</li>
+        <li>2018-2020 <b>In Codice Ratio</b>: Regione Lazio - Gruppi di ricerca</li>
+        <li>2017-2018 <b>Bridgestone Open Innovation</b>: Digital Innovation for Driving Safety (Bridgestone)</li>
+      </ul>
+      <b>Service activity</b>
+      <ul>
+        <li>SIGMOD 2022; CIKM 2021; VLDB 2021; CIKM 2018: Senior PC member; VLDB 2018: PC member demo track; ICDE 2018:
+          PC member; VLDB 2017: PVLDB review board; WWW'15 Entrepreneurs Track: (co)organizer; ICDE 2015: PC member demo
+          program; SIGMOD 2015: PC member demo program</li>
+      </ul>
+      <b>Publications</b>
+      <ul>
+        <li>
+          <a href="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/m/Merialdo:Paolo.html">
+            list of publications
+          </a>
+          from the
+          <a href="http://dblp.uni-trier.de/">
+            DBLP Bibliography Server
+          </a>
+        </li>
+        <li>
+          <a href="https://scholar.google.com/citations?hl=en&user=njKmu5cAAAAJ&view_op=list_works&sortby=pubdate">
+            list of publications and citations
+          </a>
+          from
+          <a href="http://scholar.google.com/">
+            Google Scholar
+          </a>
+        </li>
+        <li>
+          <a href="https://www.scopus.com/authid/detail.uri?authorId=6602539867">
+            list of publications and citations
+          </a>
+          on
+          <a href="http://www.scopus.com/">
+            Scopus
+          </a>
+        </li>
+      </ul>
+    </div>
+    <br>
+    <div class="altre_attivita">
+      <h2>ALTRE ATTIVITÀ</h2>
+      <b>Innovation and entrepreneurship</b>
+      <ul>
+        <li>
+          Cofounder and organizer of
+          <a href="http://www.dock3.it/">
+            Dock3 - The Startup Lab
+          </a>
+        </li>
+        <li>
+          Cofounder and organizer of
+          <a href="http://www.innovactionlab.org/">
+            InnovAction Lab
+          </a>
+        </li>
+        <li>
+          Advisor at the
+          <a href="http://www.luissenlabs.com/">
+            LuissEnlabs accelerator
+          </a>
+          in Rome
+        </li>
+      </ul>
+    </div>
+    </p>
+  </div>
+</body>
+
+</html>
